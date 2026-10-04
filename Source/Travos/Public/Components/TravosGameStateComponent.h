@@ -34,7 +34,7 @@ struct FCaptureComponentInfo
 
 // DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnLevelStateUpdated, ULevelStreaming*, Level, ELevelStreamingState, State);
 
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+UCLASS(BlueprintType, Blueprintable,  ClassGroup=(GameState), meta=(BlueprintSpawnableComponent))
 class TRAVOS_API UTravosGameStateComponent : public UActorComponent
 {
 	GENERATED_BODY()
